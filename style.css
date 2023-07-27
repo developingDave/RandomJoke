@@ -7,6 +7,8 @@
 body {
     width: 100vw;
     background: linear-gradient(to bottom, #f3e5f5, #e1bee7); /* Soft off-white gradient */
+    background: url("https://unsplash.com/photos/7JX0-bfiuxQ/download?force=true");
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
