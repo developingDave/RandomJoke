@@ -1,33 +1,27 @@
-const jokeEl = document.getElementById('joke');
-const jokeBtn = document.getElementById('jokeBtn');
+const jokeEl = document.getElementById("joke");
+const jokeBtn = document.getElementById("jokeBtn");
 
-jokeBtn.addEventListener('click', generateJoke)
+jokeBtn.addEventListener("click", generateJoke);
 
-generateJoke()
+generateJoke();
 
 async function generateJoke() {
-
-    const config = {
-        headers: {
-            Accept: 'application/json',
-        },
+  const config = {
+    headers: {
+      Accept: "application/json"
     }
+  };
 
-    const res = await fetch('https://icanhazdadjoke.com/', config)
-    const data = await res.json()
-
-    jokeEl.innerHTML=data.joke
+  try {
+    const res = await fetch("https://icanhazdadjoke.com/", config);
+    const data = await res.json();
+    jokeEl.innerHTML = data.joke;
+  } catch (error) {
+    console.error("Error fetching joke:", error);
+  }
 }
 
-//     fetch('https://icanhazdadjoke.com/', config)
-//         .then((res) => res.json())
-//         .then((data) => {
-//             jokeEl.innerHTML=data.joke
-//         })
-// }
 
-
-
-
-
-
+// Theme Toggling
+const styleDropdown = document.getElementById("style-dropdown");
+const container = document.querySelector(".container");
