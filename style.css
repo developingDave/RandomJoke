@@ -153,7 +153,10 @@ select.dark-neumorphism,
   box-shadow: inset -4px -4px 6px rgba(250, 30, 0, 0.8),
     inset 4px 4px 6px rgba(255, 255, 255, 0.8);
 }
-
+#jokeBtn{
+  margin-left: 25%;
+  width: 50%;
+}
 .vols select, .vols button {
   background-color: #ff8200;
   color: white;
