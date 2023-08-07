@@ -25,3 +25,157 @@ body {
     background-color: #f1f3f4; /* Slightly off-white container */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 40px;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    color: #333333;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 40px;
+  max-width: 900px;
+}
+#style-dropdown{
+   text-align-last: center;
+  margin: .2rem 0 0 0;
+  padding: .5rem 1rem;
+  border-radius: 40px;
+}
+#styles{
+  margin: 3rem 0 0 0;
+}
+h3 {
+    margin: 0;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.joke {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 40px auto;
+    max-width: 600px;
+    min-height: 60px;
+}
+
+.btn {
+    background-color: #b39ddb; /* Soft purple button */
+    border: 0;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for button */
+    padding: 12px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.light-neumorphism button:hover {
+  background-color: #222;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.card.light-neumorphism,
+.container.light-neumorphism {
+  background-color: #ecf0f5;
+  color: #222;
+}
+
+.card.light-neumorphism {
+  border-radius: 40px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+select.light-neumorphism,
+.light-neumorphism button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: inset -4px -4px 6px rgba(0, 0, 0, 0.4),
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+
+.card.dark-neumorphism,
+.container.dark-neumorphism,
+select.dark-neumorphism,
+.dark-neumorphism button {
+  background-color: #222;
+  color: white;
+}
+
+.card.dark-neumorphism {
+  border-radius: 40px;
+  box-shadow: 13px 13px 20px #000, -13px -13px 20px #222;
+}
+
+select.dark-neumorphism,
+.dark-neumorphism button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: inset -4px -4px 6px rgba(0, 0, 0, 0.8),
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+
+.card{
+  border: -2px -2px 4px solid white;
+  background-color: #ff8200;
+  color: white;
+}
+
+.container.vols {
+  background-color: #ff8200;
+}
+
+.vols button {
+  background-color: #ff8200;
+  max-width: 50%;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: inset -4px -4px 6px rgba(250, 30, 0, 0.8),
+    inset 4px 4px 6px rgba(255, 255, 255, 0.8);
+}
+
+.vols select, .vols button {
+  background-color: #ff8200;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.2em;
+  box-shadow: inset -4px -4px 6px rgba(250, 30, 0, 0.8),
+    inset 4px 4px 6px rgba(255, 255, 255, 0.8);
+}
+
+.vols button{
+  border-radius: 40px;
+}
+
+#card.vols{
+  box-shadow: inset -4px -4px 6px rgba(250, 30, 0, 0.8),
+    inset 4px 4px 6px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
